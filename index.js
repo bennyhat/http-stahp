@@ -52,6 +52,7 @@ var StoppableServer = {
     stop: function stop(fCallback) {
 		if (!StoppableServer.running) return fCallback("not stopping: server already stopped.");
 		
+		// NOTE: this socket destroy is necessary for some OS and load combinations (ex. Win Server 2008 R2)
         StoppableServer.sockets.forEach(function (socket) {
             return socket.destroy();
         });
