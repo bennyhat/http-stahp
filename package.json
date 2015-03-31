@@ -1,0 +1,30 @@
+{
+  "name": "http-stahp",
+  "version": "0.0.1",
+  "description": "Simple web server that can be gracefully stopped.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bennyhat/http-stahp"
+  },
+  "authors": [
+    {
+      "name": "Ben Brewer",
+      "email": "ben@benbrewer.me",
+      "url": "http://benbrewer.me/"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "http",
+    "connect",
+    "webserver",
+    "server"
+  ],
+  "dependencies": {
+    "connect": "<2.18.0"
+    "dateformat": "^1.0.11"
+  }
+}
